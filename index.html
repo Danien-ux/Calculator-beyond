@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator - Free Online Scientific & Standard Calculator</title>
+  <meta name="description" content="Calculator-X is a fast, full-screen, scientific and standard web calculator. Solve math instantly, free and online. No install needed.">
+  <meta name="keywords" content="calculator, online calculator, free calculator, scientific calculator, standard calculator, math calculator, Calculator-X, web calculator">
+  <meta name="author" content="Danien-ux">
+  <meta name="theme-color" content="#0ca678">
+  <link rel="canonical" href="https://github.com/Danien-ux/Calculator-X">
+  <!-- Open Graph for social search -->
+  <meta property="og:title" content="Calculator - Free Online Scientific & Standard Calculator">
+  <meta property="og:description" content="Calculator-X is a full-featured scientific and standard calculator for the web. Solve any math problem instantly.">
+  <meta property="og:url" content="https://github.com/Danien-ux/Calculator-X">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/600x315?text=Calculator+X">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculator - Free Online Scientific & Standard Calculator">
+  <meta name="twitter:description" content="Calculator-X is a fast, full-screen, scientific and standard web calculator.">
+  <meta name="twitter:image" content="https://via.placeholder.com/600x315?text=Calculator+X">
+  <!-- Structured data for calculator web app -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculator-X",
+    "url": "https://github.com/Danien-ux/Calculator-X",
+    "applicationCategory": "Calculator",
+    "operatingSystem": "All",
+    "description": "A free, online scientific and standard calculator for all devices.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <!-- Robust math library -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@11.9.1/lib/browser/math.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Banner Ad Placement -->
+    <div id="ad-banner">
+      <!-- Replace with your AdMob/AdSense code -->
+      <iframe src="https://via.placeholder.com/468x60?text=Ad+Banner"
+        width="100%" height="60" frameborder="0" scrolling="no" style="background:transparent;"></iframe>
+    </div>
+    <header>
+      <div id="mode-toggle">
+        <button id="standardMode" class="active">Standard</button>
+        <button id="scientificMode">Scientific</button>
+      </div>
+      <div id="online-status">
+        <span id="connection-indicator"></span>
+      </div>
+    </header>
+    <main>
+      <div id="display">
+        <div id="history">
+          <span id="history-list"></span>
+          <button id="clear-history" title="Clear History">&times;</button>
+        </div>
+        <input type="text" id="calc-input" readonly aria-label="Calculator input">
+      </div>
+      <div id="buttons" class="standard"></div>
+      <!-- No internet features/options under the buttons -->
+    </main>
+    <footer>
+      <span>Calculator-X | <a href="https://github.com/Danien-ux/Calculator-X" target="_blank" rel="noopener">GitHub</a></span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
